@@ -1,44 +1,29 @@
-# HyperSpectraNet: Enhancing Hyperspectral Image Reconstruction
+# HSI Reconstruction
 
-## Overview
+This repository contains the implementation of a U-Net-based architecture augmented with spatial and spectral attention mechanisms for HyperSpectral Imaging (HSI) Reconstruction. The model aims to enhance the feature extraction process by focusing on relevant spatial and spectral components, improving the reconstruction quality of HSI data.
 
-HyperSpectraNet is a convolutional neural network (CNN) architecture designed to improve the reconstruction of hyperspectral images (HSI). This model combines spectral and spatial attention mechanisms with Fourier transform interactions to tackle the unique challenges in HSI reconstruction. It has been trained and evaluated on the NTIRE 2022 hyperspectral dataset, showcasing significant advancements in image quality and fidelity.
+## Features
 
-## Introduction
+- **U-Net Architecture**: A modified U-Net architecture designed for HSI data processing.
+- **Attention Mechanisms**: Incorporates attention modules to enhance model performance.
+- **Output Normalization**: Includes an output normalization module to scale the output within a specific range.
 
-Hyperspectral imaging (HSI) captures a broad spectrum of light, enabling applications in various fields. However, spectral reconstruction from limited information is complex. HyperSpectraNet addresses this challenge by integrating spectral and spatial attentions and Fourier transform interactions, leading to accurate HSI reconstruction.
+## Requirements
 
-## Key Features
+To install the necessary requirements, you can use the following command:
 
-<!-- - SpectralAttention: Amplifies important spectral features.
-- SpatialAttention: Focuses on spatial details.
-- Fourier Transform Interactions: Utilizes FFT and IFFT for comprehensive analysis.
-- Encoder-Decoder Structure: Captures and reconstructs HSI features.
-- Output Normalization: Ensures appropriate output scaling. -->
+```bash
+pip install -r requirements.txt
+```
 
-## Training and Evaluation
+## Usage
 
-- Loss Function: Spectral Angle Mapper (SAM) loss.
-- Optimization: Adam optimizer with a learning rate of 0.001.
-- Input and Output: RGB input and 31 spectral bands output.
-- GPU Acceleration: Compatible with CUDA for efficient training.
+### Training
 
-## Results
+To train the model, please place the dataset in the folder and run the training notebook
 
-HyperSpectraNet outperforms existing methods in both patch and full image evaluation on the NTIRE 2022 dataset. It excels in preserving spatial coherence and spectral fidelity.
+### Evaluation
 
-## Conclusion
+The pretrained model is provided to evaluate it , please run the evaluation notebook
 
-HyperSpectraNet sets new benchmarks in hyperspectral image reconstruction, offering enhanced image quality and potential applications across diverse domains.
-
-## Future Work
-
-<!-- - Exploration of Additional Datasets
-- Real-Time Processing
-- Attention Mechanism Refinement
-- Transfer Learning and Domain Adaptation
-- Integration with Hardware
-- Interdisciplinary Applications
-- Explainable AI -->
-
-
+thanks
