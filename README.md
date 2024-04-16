@@ -2,6 +2,14 @@
 
 This repository contains the implementation of a U-Net-based architecture augmented with spatial and spectral attention mechanisms for HyperSpectral Imaging (HSI) Reconstruction. The model aims to enhance the feature extraction process by focusing on relevant spatial and spectral components, improving the reconstruction quality of HSI data.
 
+### Quick Testing:
+
+To test the reconstruction model, please go to [testing_notebook](./evaluation_code/Testing.ipynb):
+
+- Provide the Path: Enter the path to any RGB image of your choice.
+- Run the Model code: Execute the notebook to reconstruct the HSI image.
+- Compare Results: At the end of the notebook, compare the reconstructed HSI image with the provided [Ground Truth](./evaluation_code/testing_data/Valid_spectral/) to evaluate the model’s performance.
+
 ## Dataset
 
 The ARAD 1K dataset used for training, validation, and testing consists of RGB and spectral images. You can download the dataset from the following links:
@@ -73,5 +81,9 @@ To train the model, please place the dataset in the folder and run the training 
 ### Evaluation
 
 The pretrained model is provided to evaluate it , please run the evaluation notebook
+
+### 31 channel reconstructed HSI
+
+![](./evaluation_code/testing_data/results/result1.png)
 
 thanks
