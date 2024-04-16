@@ -82,8 +82,8 @@ To train the model, please place the dataset in the folder and run the training 
 
 The pretrained model is provided to evaluate it , please run the evaluation notebook
 
-### 31 channel reconstructed HSI
+### Visualizing Reconstructed HSI
 
 ![](./evaluation_code/testing_data/results/result1.png)
 
-thanks
+### Happy Reconstruction!
