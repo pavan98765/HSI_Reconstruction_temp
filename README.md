@@ -11,6 +11,8 @@ The ARAD 1K dataset used for training, validation, and testing consists of RGB a
 - **Validation Spectral Images**: [Google Drive](https://drive.google.com/file/d/12QY8LHab3gzljZc3V6UyHgBee48wh9un/view)
 - **Validation RGB Images**: [Google Drive](https://drive.google.com/file/d/19vBR_8Il1qcaEZsK42aGfvg5lCuvLh1A/view)
 
+- **Test RGB Images**: [Google Drive](https://drive.google.com/file/d/1A5309Gk7kNFI-ORyADueiPOCMQNTA7r5/view)
+
 Please organize the downloaded dataset in the following format:
 
 ```
@@ -35,11 +37,24 @@ Please organize the downloaded dataset in the following format:
         |--valid_list.txt
 ```
 
-## Features
+## Model Architecture
 
-- **U-Net Architecture**: A modified U-Net architecture designed for HSI data processing.
-- **Attention Mechanisms**: Incorporates attention modules to enhance model performance.
-- **Output Normalization**: Includes an output normalization module to scale the output within a specific range.
+The model architecture is specifically designed for HyperSpectral Imaging (HSI) tasks, offering enhanced performance and feature extraction capabilities. Here's a breakdown of its components:
+
+### Encoding
+
+- **Spatial and Spectral Attention**: Each encoder block incorporates two attention mechanisms to focus on relevant spatial and spectral features, improving model performance.
+- **Downsampling**: Convolutional layers followed by max-pooling operations reduce spatial dimensions while increasing feature depth.
+
+### Bottleneck
+
+- **Feature Refinement**: Two convolutional layers further refine encoded features, capturing high-level representations.
+
+### Decoding
+
+- **Upsampling**: Transposed convolutional layers recover spatial details lost during encoding, restoring image resolution.
+- **Attention Mechanisms**: Attention modules applied to each decoder block refine reconstructed HSI, improving overall quality.
+- **Output Normalization**: A normalization module ensures consistent scaling of the output, optimizing the reconstructed HSI data.
 
 ## Requirements
 
