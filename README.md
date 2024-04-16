@@ -2,21 +2,16 @@
 
 This repository contains the implementation of a U-Net-based architecture augmented with spatial and spectral attention mechanisms for HyperSpectral Imaging (HSI) Reconstruction. The model aims to enhance the feature extraction process by focusing on relevant spatial and spectral components, improving the reconstruction quality of HSI data.
 
-### Dataset links:
+## Dataset
 
-ARAD 1K dataset
+The ARAD 1K dataset used for training, validation, and testing consists of RGB and spectral images. You can download the dataset from the following links:
 
-training spectral images: [drive link](https://drive.google.com/file/d/1FQBfDd248dCKClR-BpX5V2drSbeyhKcq/view)
+- **Training Spectral Images**: [Google Drive](https://drive.google.com/file/d/1FQBfDd248dCKClR-BpX5V2drSbeyhKcq/view)
+- **Training RGB Images**: [Google Drive](https://drive.google.com/file/d/1A4GUXhVc5k5d_79gNvokEtVPG290qVkd/view)
+- **Validation Spectral Images**: [Google Drive](https://drive.google.com/file/d/12QY8LHab3gzljZc3V6UyHgBee48wh9un/view)
+- **Validation RGB Images**: [Google Drive](https://drive.google.com/file/d/19vBR_8Il1qcaEZsK42aGfvg5lCuvLh1A/view)
 
-training RGB images:[drive link](https://drive.google.com/file/d/1A4GUXhVc5k5d_79gNvokEtVPG290qVkd/view)
-
-validation spectral images:[drive link](https://drive.google.com/file/d/12QY8LHab3gzljZc3V6UyHgBee48wh9un/view)
-
-validation RGB images:[drive link](https://drive.google.com/file/d/19vBR_8Il1qcaEZsK42aGfvg5lCuvLh1A/view)
-
-testing RGB images:[drive link](https://drive.google.com/file/d/1A5309Gk7kNFI-ORyADueiPOCMQNTA7r5/view)
-
-Please place the dataset in the below format.
+Please organize the downloaded dataset in the following format:
 
 ```
 |--dataset
